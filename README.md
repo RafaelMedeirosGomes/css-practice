@@ -6,9 +6,8 @@ Repository for Brad Traversy "50 Projects in 50 Days" course.
 
 ## Prerequisites
 
-1. Install [Docker](https://www.docker.com/)
-2. Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-3. Clone this repo
+- [Docker](https://www.docker.com/)
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ## How this works
 
