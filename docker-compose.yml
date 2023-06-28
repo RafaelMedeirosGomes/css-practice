@@ -1,0 +1,8 @@
+services:
+  html:
+    image: nginx:stable-alpine3.17-slim
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
