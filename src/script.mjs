@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
                 currentStep -= 1;
                 break;
             case 3:
-                barDone.style.width = `calc(33% - 1rem)`;
+                barDone.style.width = `calc(34% - 1rem)`;
                 barTodo.style.width = `calc(66% - 1rem)`;
                 progressSteps[2].classList.remove("is--active");
                 progressSteps[2].classList.add("is--inactive");
@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
                 break;
             case 4:
                 barDone.style.width = `calc(66% - 1rem)`;
-                barTodo.style.width = `calc(33% - 1rem)`;
+                barTodo.style.width = `calc(34% - 1rem)`;
                 progressSteps[3].classList.remove("is--active");
                 progressSteps[3].classList.add("is--inactive");
                 nextBtn.disabled = false;
@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
     const nextStep = () => {
         switch (currentStep) {
             case 1:
-                barDone.style.width = `calc(33% - 1rem)`;
+                barDone.style.width = `calc(34% - 1rem)`;
                 barTodo.style.width = `calc(66% - 1rem)`;
                 progressSteps[1].classList.add("is--active");
                 progressSteps[1].classList.remove("is--inactive");
@@ -47,7 +47,7 @@ window.addEventListener("load", () => {
                 break;
             case 2:
                 barDone.style.width = `calc(66% - 1rem)`;
-                barTodo.style.width = `calc(33% - 1rem)`;
+                barTodo.style.width = `calc(34% - 1rem)`;
                 progressSteps[2].classList.add("is--active");
                 progressSteps[2].classList.remove("is--inactive");
                 currentStep += 1;
