@@ -8,3 +8,82 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+.c-wrapper {
+    align-self: center;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    width: 80%;
+}
+
+.c-progress {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.c-progress_bar {
+    align-self: center;
+    height: 2px;
+    position: absolute;
+    transition: width 0.4s ease-in;
+    z-index: -1;
+}
+
+.c-progress_bar.is--active {
+    background-color: cadetblue;
+    left: 1rem;
+    width: 0;
+}
+
+.c-progress_bar.is--inactive {
+    background-color: gray;
+    right: 1rem;
+    width: calc(100% - 2rem);
+}
+
+.c-progress__step {
+    align-items: center;
+    background-color: whitesmoke;
+    border: 2px solid transparent;
+    border-color: gray;
+    border-radius: 999px;
+    color: black;
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    height: 30px;
+    margin: 1px;
+    width: 30px;
+}
+
+.c-progress__step.is--active {
+    border-color: cadetblue;
+}
+
+.c-controllers {
+    display: flex;
+    justify-content: center;
+}
+
+.c-controllers>button {
+    background-color: cadetblue;
+    border: none;
+    border-radius: 4px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 10px;
+    padding: 4px 16px;
+}
+
+.c-controllers>button:active {
+    transform: scale(0.95);
+}
+
+.c-controllers>button:disabled {
+    background-color: gray;
+    cursor: auto;
+}

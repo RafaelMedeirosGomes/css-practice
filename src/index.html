@@ -13,11 +13,25 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.mjs"></script>
     <script defer src="socket.mjs"></script>
-    <title>My Project</title>
+    <title>Progress steps</title>
 </head>
 
 <body>
-    <h1>Project Template</h1>
+    <section class="c-wrapper">
+        <section class="c-progress">
+            <div class="c-progress_bar is--active"></div>
+            <div class="c-progress_bar is--inactive"></div>
+            <div class="c-progress__step is--active">1</div>
+            <div class="c-progress__step is--inactive">2</div>
+            <div class="c-progress__step is--inactive">3</div>
+            <div class="c-progress__step is--inactive">4</div>
+        </section>
+        <section class="c-controllers">
+            <button class="c-controllers_prev" disabled>Prev</button>
+            <button class="c-controllers_next">Next</button>
+        </section>
+    </section>
+
 </body>
 
 </html>
