@@ -8,3 +8,31 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+.c-cards {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    justify-self: center;
+    width: 90%;
+}
+
+.c-cards__card {
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 1px;
+    transition: flex 1.5s ease-in-out, opacity 1.5s ease-in 0.2s;
+}
+
+.c-cards__card.is--active {
+    flex-grow: 20;
+    opacity: 1;
+}
+
+.c-cards__card.is--inactive {
+    flex-grow: 1;
+    opacity: 0.5;
+}
